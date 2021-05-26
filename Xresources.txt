@@ -1,0 +1,22 @@
+Quick notes:
+Xresources is a user-level configuration dotfile, typically located at ~/.Xresources.
+It is used for configuring parameters for X client applications.
+
+Load resource file:
+xrdb ~/.Xresources
+
+Show current settings:
+xrdb -query -all
+
+Syntax:
+basic syntax: name.Class.resource: value
+example: xscreensaver.Dialog.headingFont: -*-fixed-bold-r-*-*-*-100-*-*-*-*-iso8859-1
+wildcard example: *.color0: #E0E1E2 
+(All programs that make use of the resource 'color0' will use the given value)
+
+Comments:
+! This is a comment
+
+Include files:
+(Use when seperate resource files are needed for each program)
+#include ".Xresources/<program>"
