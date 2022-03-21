@@ -1,0 +1,7 @@
+X Server Configuration:
+startx: enters the graphical environment by calling xinit
+
+~/.xinitrc: config file of xinit; add the following lines:
+xrdb .Xresources # reads Xresources
+# start neccessary daemons, for instance: pulseaudio -D
+exec bspwm # execute bspwm

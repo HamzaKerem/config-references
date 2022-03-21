@@ -1,0 +1,11 @@
+Config files:
+~/.config/sxhkd/sxhkdrc: location of sxhkd's config file; bspwm hotkeys are configured here
+/usr/share/bspwm/examples/sxhkdrc: example sxhkdrc file
+
+sxhkdrc syntax:
+<key> + <key>....
+	<command>
+<key> + {<keyA>,<keyB>}
+	<command> {<argA>,<argB>}
+
+pkill -USR1 -x sxhkd: reload sxhkdrc
